@@ -5,7 +5,6 @@ val Person(haroldsName, haroldsAge, haroldsHeight) = harold
 haroldsName
 haroldsAge
 haroldsHeight
-
 class MyPerson(val name: String, val age: Int, val height: Int)
 object MyPerson {
     def apply(name: String, age: Int, height: Int) =
@@ -16,7 +15,6 @@ object MyPerson {
 
 val MyPerson(geraldsName, geraldsAge, geraldsHeight) =
     MyPerson("Gerald", 71, 160)
-
 object MultipleOfTwo {
     def unapply(number: Int) = {
         if (number % 2 == 0) Some(number / 2)
